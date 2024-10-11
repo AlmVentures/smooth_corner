@@ -248,7 +248,10 @@ class SmoothRectangleBorder extends OutlinedBorder {
     );
   }
 
-  @override
+  @Deprecated(
+    'This method is deprecated and will be removed in a future release. '
+    'Use Object.hash or Object.hashAll instead.',
+  )
   int get hashCode {
     return Object.hash(
       smoothness,
